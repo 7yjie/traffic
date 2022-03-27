@@ -13,12 +13,18 @@ export default {
         doLoginUser(conText,payload) {
             doLoginUserData(payload).then(res=>{
                 console.log(res);
+                if(payload && payload.success) {
+                    payload.success(res);
+                }
             })
         },
         //会员注册
         regUser(conText,payload) {
             regUserData(payload).then(res=>{
-                console.log(res)
+                console.log(res);
+                if(payload && payload.success) {
+                    payload.success(res);
+                }
             })
         }
     }

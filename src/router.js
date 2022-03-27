@@ -11,7 +11,7 @@ let router  = new Route({
           name:"main",
           path:"/",
           redirect:"/login",
-          component:()=>import('./pages/main/main.vue')
+          component:()=>import('./pages/login/index.vue')
         },
         {
             name:"login",
@@ -22,6 +22,11 @@ let router  = new Route({
             path:"/reg",
             name:"reg",
             component:()=>import("./pages/reg/index.vue")
+        },
+        {
+            path:"/main",
+            name:"main",
+            component:()=>import("./pages/main/main.vue")
         }
     ]
 });

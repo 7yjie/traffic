@@ -1,12 +1,12 @@
 <template>
     <div>
-        <router-view></router-view>
+        主页面
     </div>
 </template>
 
 <script>
     export default {
-        name: "main"
+        name: "index"
     }
 </script>
 

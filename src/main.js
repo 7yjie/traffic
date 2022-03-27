@@ -6,7 +6,6 @@ import config from './assets/js/conf/index';
 import store from './store/index'
 import Axios from 'axios'
 
-
 Vue.config.productionTip = false;
 Vue.prototype.$request = request;
 Vue.prototype.$config = config;
